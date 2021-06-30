@@ -1,13 +1,24 @@
 @prefix : <http://purl.org/nemo/competence#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @base <http://purl.org/nemo/competence> .
 
 <http://purl.org/nemo/competence> rdf:type owl:Ontology ;
-                                   owl:imports <http://purl.org/nemo/gufo#> .
+                                   owl:versionIRI <http://purl.org/nemo/competence/0.1.0> ;
+                                   owl:imports <http://purl.org/nemo/gufo#> ;
+                                   dc:creator "Almeida, João Paulo A." ,
+                                              "Azevedo, Carlos L.B." ,
+                                              "Calhau, Rodrigo F." ;
+                                   dc:date "2021-06-30"@en ;
+                                   dc:title "A Lightweight Competence Ontology based on gUFO"@en ;
+                                   dct:rights "This work is distributed under Creative Commons Attribution License CC BY 4.0 <https://creativecommons.org/licenses/by/4.0/legalcode>"@en ;
+                                   vann:preferredNamespaceUri "http://purl.org/nemo/competence#"^^xsd:anyURI .
 
 #################################################################
 #    Classes
